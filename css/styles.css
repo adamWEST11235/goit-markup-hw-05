@@ -3,14 +3,15 @@ body {
   color: #212121;
 }
 :root {
-  --brand-color: #2f303a;
+  --brand-color-gray: #2f303a;
+  --brand-color-blue: #2196f3;
+  --brand-color-gray-2: #757575;
 }
 footer {
-  background-color: var(--brand-color);
-  position: absolute;
+  background-color: var(--brand-color-gray);
 }
 .order {
-  background-color: var(--brand-color);
+  background-color: var(--brand-color-gray);
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -30,7 +31,7 @@ a {
   text-decoration: none;
 }
 .logo-blue {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 
 .nav-link {
@@ -43,15 +44,60 @@ a {
 }
 .nav-link:focus,
 .nav-link:hover {
-  color: #2196f3;
+  color: var(--brand-color-blue);
 }
 .contact-link-header {
-  color: #757575;
+  color: var(--brand-color-gray-2);
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
 .contact-link-header:focus,
 .contact-link-header:hover {
-  color: #2196f3;
+  color: var(--brand-color-blue);
+}
+.button-style {
+  background: #f5f4fa;
+  border: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.portfolio-img-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.portfolio-img-description {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--brand-color-gray-2);
+}
+address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.address-mail {
+  color: #ffffff99;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+}
+.address-tel {
+  color: #ffffff99;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
