@@ -171,10 +171,10 @@ footer {
 .footer-logo > span {
   color: var(--brand-color-2);
 }
-.footer-address {
+.footer-address > p {
   font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--brand-color-5);
   letter-spacing: 0.03em;
   text-decoration: none;
