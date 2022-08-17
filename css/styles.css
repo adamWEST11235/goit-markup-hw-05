@@ -124,7 +124,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
 }
-.portfolio-button-style {
+.portfolio-section-1 > ul > li > button {
   font-family: "Roboto";
   background: #f5f4fa;
   border-radius: 4px;
@@ -136,21 +136,21 @@ header {
   line-height: 1.62;
   letter-spacing: 0.02em;
 }
-.portfolio-button-style:hover,
-.portfolio-button-style:focus {
+.portfolio-section-1 > ul > li > button:hover,
+.portfolio-section-1 > ul > li > button:focus {
   background: var(--brand-color-2);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--brand-color-5);
 }
-.portfolio-img-heading {
+.portfolio-section-1 > ul > li > figure > figcaption > h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-img-description {
+.portfolio-section-1 > ul > li > figure > figcaption > span {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -183,7 +183,7 @@ footer {
   text-decoration: none;
   color: var(--brand-color-4);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
 }
@@ -191,7 +191,7 @@ footer {
   text-decoration: none;
   color: var(--brand-color-4);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .footer-address-mail:hover,
