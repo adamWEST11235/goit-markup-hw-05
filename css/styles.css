@@ -74,6 +74,14 @@ header {
   color: var(--brand-color-5);
   cursor: pointer;
 }
+.studio-order > button:hover,
+.studio-order > button:focus {
+  background: #f5f4fa;
+  box-shadow: 0px 3px 1px #2196f31a, 0px 1px 2px #2196f314,
+    0px 2px 2px #2196f31f;
+  border-radius: 4px;
+  color: #212121;
+}
 .studio-section-1 h3 {
   font-weight: 700;
   font-size: 14px;
@@ -106,8 +114,8 @@ header {
 }
 .studio-section-3 figure {
   background: var(--brand-color-5);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+    0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
 .studio-section-3 h4 {
@@ -139,8 +147,8 @@ header {
 .portfolio-section-1 > ul > li > button:hover,
 .portfolio-section-1 > ul > li > button:focus {
   background: var(--brand-color-2);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
+    0px 2px 2px #0000001f;
   border-radius: 4px;
   color: var(--brand-color-5);
 }
