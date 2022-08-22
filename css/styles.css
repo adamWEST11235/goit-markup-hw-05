@@ -8,6 +8,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
+  width: 1600px;
 }
 .container {
   width: 1200px;
@@ -39,8 +40,6 @@ header > div {
 }
 .header-logo > span {
   color: var(--brand-color-2);
-}
-header > div > nav {
 }
 .header-nav-link {
   text-decoration: none;
@@ -81,8 +80,12 @@ header > div > ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-color-5);
+  padding: 200px 452px 30px 452px;
 }
-.studio-order > button {
+.studio-order > div {
+  padding-bottom: 200px;
+}
+.studio-order > div > button {
   font-family: "Roboto";
   background: var(--brand-color-2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -97,21 +100,31 @@ header > div > ul {
   border: none;
   color: var(--brand-color-5);
   cursor: pointer;
+  margin: 0 auto;
+  padding: 10px 41px 10px 42px;
 }
-.studio-order > button:hover,
-.studio-order > button:focus {
+.studio-order > div > button:hover,
+.studio-order > div > button:focus {
   background: #f5f4fa;
   box-shadow: 0px 3px 1px #2196f31a, 0px 1px 2px #2196f314,
     0px 2px 2px #2196f31f;
   border-radius: 4px;
   color: #212121;
 }
+
+.studio-section-1 > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
 .studio-section-1 h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .studio-section-1 p {
   font-size: 14px;
@@ -119,17 +132,31 @@ header > div > ul {
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
 }
+
 .studio-section-2 > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
+.studio-section-2 > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
 .studio-section-3 {
   background: #f5f4fa;
 }
-.studio-section-3 > h2 {
+.studio-section-3 ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.studio-section-3 > div > h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -199,17 +226,26 @@ footer {
   line-height: 1.2;
   color: var(--brand-color-5);
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-left: 15px;
+  margin-top: 60px;
 }
 .footer-logo > span {
   color: var(--brand-color-2);
 }
-.footer-address > p {
+.footer-address {
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-bottom: 60px;
+}
+.footer-address > span {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--brand-color-5);
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 0%;
 }
 .footer-address-mail {
   text-decoration: none;
@@ -218,6 +254,7 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
+  margin-top: 9px;
 }
 .footer-address-tel {
   text-decoration: none;
@@ -225,6 +262,7 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 9px;
 }
 .footer-address-mail:hover,
 .footer-address-mail:focus,
