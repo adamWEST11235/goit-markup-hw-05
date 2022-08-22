@@ -116,6 +116,7 @@ header > div > ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  gap: 30px;
 }
 
 .studio-section-1 h3 {
@@ -146,6 +147,7 @@ header > div > ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  gap: 30px;
 }
 
 .studio-section-3 {
@@ -155,6 +157,7 @@ header > div > ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
+  gap: 30px;
 }
 .studio-section-3 > div > h2 {
   font-weight: 700;
@@ -175,6 +178,8 @@ header > div > ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .studio-section-3 p {
   font-size: 16px;
@@ -182,8 +187,16 @@ header > div > ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
+  padding-bottom: 30px;
 }
-.portfolio-section-1 > ul > li > button {
+.portfolio-section-1-list-1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  gap: 8px;
+}
+.portfolio-section-1-list-1 > li > button {
   font-family: "Roboto";
   background: #f5f4fa;
   border-radius: 4px;
@@ -194,26 +207,42 @@ header > div > ul {
   font-size: 14px;
   line-height: 1.62;
   letter-spacing: 0.02em;
+  padding: 6px 22px 6px 22px;
 }
-.portfolio-section-1 > ul > li > button:hover,
-.portfolio-section-1 > ul > li > button:focus {
+.portfolio-section-1-list-1 > li > button:hover,
+.portfolio-section-1-list-1 > li > button:focus {
   background: var(--brand-color-2);
   box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
     0px 2px 2px #0000001f;
   border-radius: 4px;
   color: var(--brand-color-5);
 }
-.portfolio-section-1 > ul > li > figure > figcaption > h3 {
+.portfolio-section-1-list-2 {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 30px;
+  margin-top: 50px;
+}
+.portfolio-section-1-list-2 > li > figure {
+  border: 1px solid #eeeeee;
+}
+.portfolio-section-1-list-2 > li > figure > figcaption > h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-left: 24px;
 }
-.portfolio-section-1 > ul > li > figure > figcaption > span {
+.portfolio-section-1-list-2 > li > figure > figcaption > span {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
+  padding-left: 24px;
+  padding-bottom: 20px;
+  margin-top: 4px;
 }
 footer {
   background-color: var(--brand-color-1);
