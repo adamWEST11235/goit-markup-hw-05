@@ -5,6 +5,11 @@
   --brand-color-4: #ffffff99;
   --brand-color-5: #fff;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: #212121;
@@ -13,6 +18,8 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .section {
   padding-top: 94px;
@@ -21,10 +28,12 @@ body {
 header {
   border-bottom: 1px solid #ececec;
 }
-header > div {
+header div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .header-logo {
   text-decoration: none;
@@ -34,12 +43,13 @@ header > div {
   line-height: 1.2;
   color: #000;
   letter-spacing: 0.03em;
-  padding-left: 15px;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
-.header-logo > span {
+.header-logo span {
   color: var(--brand-color-2);
+}
+header nav {
+  margin-right: 371px;
+  margin-left: 93px;
 }
 .header-nav-link {
   text-decoration: none;
@@ -48,9 +58,11 @@ header > div {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
-  margin-left: 46px;
 }
-header > div > ul {
+.header-nav-link:not(:last-child) {
+  margin-right: 46px;
+}
+header ul {
   list-style-type: none;
   display: flex;
 }
@@ -61,8 +73,11 @@ header > div > ul {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+}
+header li:not(:first-child) {
   margin-left: 50px;
 }
+
 .header-nav-link:focus,
 .header-nav-link:hover,
 .header-contact-link:focus,
@@ -71,8 +86,9 @@ header > div > ul {
 }
 .studio-order {
   background-color: var(--brand-color-1);
+  padding: 200px 452px 200px 452px;
 }
-.studio-order > h1 {
+.studio-order h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,12 +96,10 @@ header > div > ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--brand-color-5);
-  padding: 200px 452px 30px 452px;
+  margin-bottom: 30px;
 }
-.studio-order > div {
-  padding-bottom: 200px;
-}
-.studio-order > div > button {
+
+.studio-order button {
   font-family: "Roboto";
   background: var(--brand-color-2);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -103,16 +117,18 @@ header > div > ul {
   margin: 0 auto;
   padding: 10px 41px 10px 42px;
 }
-.studio-order > div > button:hover,
-.studio-order > div > button:focus {
+.studio-order button:hover,
+.studio-order button:focus {
   background: #f5f4fa;
   box-shadow: 0px 3px 1px #2196f31a, 0px 1px 2px #2196f314,
     0px 2px 2px #2196f31f;
   border-radius: 4px;
   color: #212121;
 }
-
-.studio-section-1 > ul {
+.studio-section-1 {
+  padding-bottom: 0;
+}
+.studio-section-1 ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -134,7 +150,7 @@ header > div > ul {
   color: var(--brand-color-3);
 }
 
-.studio-section-2 > h2 {
+.studio-section-2 h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -143,7 +159,7 @@ header > div > ul {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.studio-section-2 > ul {
+.studio-section-2 ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -159,12 +175,13 @@ header > div > ul {
   list-style: none;
   gap: 30px;
 }
-.studio-section-3 > div > h2 {
+.studio-section-3 h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .studio-section-3 figure {
   background: var(--brand-color-5);
@@ -172,14 +189,17 @@ header > div > ul {
     0px 2px 1px #00000033;
   border-radius: 0px 0px 4px 4px;
 }
+.studio-section-3 figcaption {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .studio-section-3 h4 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .studio-section-3 p {
   font-size: 16px;
@@ -187,7 +207,6 @@ header > div > ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
-  padding-bottom: 30px;
 }
 .portfolio-section-1-list-1 {
   display: flex;
@@ -195,8 +214,9 @@ header > div > ul {
   align-items: flex-start;
   list-style: none;
   gap: 8px;
+  margin-bottom: 50px;
 }
-.portfolio-section-1-list-1 > li > button {
+.portfolio-section-1-list-1 button {
   font-family: "Roboto";
   background: #f5f4fa;
   border-radius: 4px;
@@ -209,8 +229,8 @@ header > div > ul {
   letter-spacing: 0.02em;
   padding: 6px 22px 6px 22px;
 }
-.portfolio-section-1-list-1 > li > button:hover,
-.portfolio-section-1-list-1 > li > button:focus {
+.portfolio-section-1-list-1 button:hover,
+.portfolio-section-1-list-1 button:focus {
   background: var(--brand-color-2);
   box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
     0px 2px 2px #0000001f;
@@ -222,32 +242,35 @@ header > div > ul {
   flex-wrap: wrap;
   list-style: none;
   gap: 30px;
-  margin-top: 50px;
 }
-.portfolio-section-1-list-2 > li > figure {
-  border: 1px solid #eeeeee;
+
+.portfolio-section-1-list-2 figcaption {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
-.portfolio-section-1-list-2 > li > figure > figcaption > h3 {
+
+.portfolio-section-1-list-2 h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
 }
-.portfolio-section-1-list-2 > li > figure > figcaption > span {
+.portfolio-section-1-list-2 span {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
-  padding-left: 24px;
-  padding-bottom: 20px;
-  margin-top: 4px;
 }
 footer {
   background-color: var(--brand-color-1);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
+  display: block;
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -255,43 +278,41 @@ footer {
   line-height: 1.2;
   color: var(--brand-color-5);
   letter-spacing: 0.03em;
-  padding-top: 60px;
-  padding-left: 15px;
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 .footer-logo > span {
   color: var(--brand-color-2);
 }
 .footer-address {
-  margin-top: 20px;
-  padding-left: 15px;
-  padding-bottom: 60px;
+  display: block;
 }
 .footer-address > span {
+  display: block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--brand-color-5);
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 0%;
+  margin-bottom: 9px;
 }
 .footer-address-mail {
+  display: block;
   text-decoration: none;
   color: var(--brand-color-4);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
-  margin-top: 9px;
+  margin-bottom: 9px;
 }
 .footer-address-tel {
+  display: block;
   text-decoration: none;
   color: var(--brand-color-4);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-top: 9px;
 }
 .footer-address-mail:hover,
 .footer-address-mail:focus,
