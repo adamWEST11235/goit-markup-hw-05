@@ -87,6 +87,9 @@ header li:not(:first-child) {
 .studio-order {
   background-color: var(--brand-color-1);
   padding: 200px 452px 200px 452px;
+  background-image: linear-gradient(to bottom, #2f303a66 0%, #2f303a66 100%),
+    url("../images/order.jpg");
+  background-size: 1600px;
 }
 .studio-order h1 {
   font-weight: 900;
