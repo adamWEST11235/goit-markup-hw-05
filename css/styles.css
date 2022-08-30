@@ -243,7 +243,12 @@ header li:not(:first-child) {
   list-style: none;
   gap: 30px;
 }
-
+.portfolio-section-1-list-2 li:hover,
+.portfolio-section-1-list-2 li:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-section-1-list-2 figcaption {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
