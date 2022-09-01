@@ -48,7 +48,7 @@ header div {
   color: var(--brand-color-2);
 }
 header nav {
-  margin-right: 371px;
+  margin-right: 345px;
   margin-left: 93px;
 }
 .header-nav-link {
@@ -66,6 +66,14 @@ header ul {
   list-style-type: none;
   display: flex;
 }
+header li {
+  display: flex;
+
+  align-items: center;
+}
+header svg {
+  fill: "#757575";
+}
 .header-contact-link {
   text-decoration: none;
   color: var(--brand-color-3);
@@ -73,15 +81,22 @@ header ul {
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
+  margin-left: 10px;
 }
 header li:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .header-nav-link:focus,
-.header-nav-link:hover,
-.header-contact-link:focus,
-.header-contact-link:hover {
+.header-nav-link:hover {
+  color: var(--brand-color-2);
+}
+header li:hover,
+header li:focus {
+  fill: var(--brand-color-2);
+}
+header li:hover .header-contact-link,
+header li:focus .header-contact-link {
   color: var(--brand-color-2);
 }
 .studio-order {
@@ -130,6 +145,12 @@ header li:not(:first-child) {
 }
 .studio-section-1 {
   padding-bottom: 0;
+}
+.studio-section-1 li > div {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 25px 100px;
 }
 .studio-section-1 ul {
   display: flex;
@@ -193,8 +214,7 @@ header li:not(:first-child) {
   border-radius: 0px 0px 4px 4px;
 }
 .studio-section-3 figcaption {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 .studio-section-3 h4 {
   font-weight: 500;
@@ -211,6 +231,23 @@ header li:not(:first-child) {
   letter-spacing: 0.03em;
   color: var(--brand-color-3);
 }
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.social-links > li {
+  background-color: var(--brand-color-2);
+  border-radius: 50%;
+  padding: 12px;
+}
+.social-links > li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links svg {
+  fill: #afb1b8;
+}
+
 .portfolio-section-1-list-1 {
   display: flex;
   justify-content: center;
