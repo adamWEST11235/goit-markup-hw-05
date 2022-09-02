@@ -241,17 +241,42 @@ header li:focus .header-contact-link {
 }
 .social-links svg {
   fill: #afb1b8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   width: 44px;
   height: 44px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--brand-color-2);
+}
+.studio-section-4 h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.studio-section-4 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.studio-section-4 li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 17.71px 32px 14.25px;
+}
+.studio-section-4 li:not(:last-child) {
+  margin-right: 30px;
+}
+.studio-section-4 svg {
+  fill: #afb1b8;
+}
+.studio-section-4 li:hover,
+.studio-section-4 li:focus {
+  fill: var(--brand-color-2);
+  border-color: var(--brand-color-2);
 }
 
-.portfolio-section-1-list-1 {
+.studio .portfolio-section-1-list-1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
