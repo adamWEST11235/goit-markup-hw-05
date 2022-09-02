@@ -72,7 +72,7 @@ header li {
   align-items: center;
 }
 header svg {
-  fill: "#757575";
+  fill: var(--brand-color-3);
 }
 .header-contact-link {
   text-decoration: none;
@@ -91,8 +91,8 @@ header li:not(:first-child) {
 .header-nav-link:hover {
   color: var(--brand-color-2);
 }
-header li:hover,
-header li:focus {
+header li:hover .header-icon,
+header li:focus .header-icon {
   fill: var(--brand-color-2);
 }
 header li:hover .header-contact-link,
@@ -272,10 +272,12 @@ header li:focus .header-contact-link {
 }
 .studio-section-4 li:hover,
 .studio-section-4 li:focus {
-  fill: var(--brand-color-2);
   border-color: var(--brand-color-2);
 }
-
+.studio-section-4 li:hover .studio-icon,
+.studio-section-4 li:focus .studio-icon {
+  fill: var(--brand-color-2);
+}
 .studio .portfolio-section-1-list-1 {
   display: flex;
   justify-content: center;
