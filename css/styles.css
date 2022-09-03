@@ -418,16 +418,18 @@ footer > div {
   display: flex;
   justify-content: space-between;
   grid-gap: 10px;
+  list-style: none;
 }
-.footer-social-links a {
+.footer-social-links li {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  fill: var(--brand-color-5);
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social-links a:hover,
-.footer-social-links a:focus {
+.footer-social-links svg {
   fill: var(--brand-color-5);
+}
+.footer-social-links li:hover,
+.footer-social-links li:focus {
   background-color: var(--brand-color-2);
 }
