@@ -278,7 +278,7 @@ header li:focus .header-contact-link {
 .studio-section-4 li:focus .studio-icon {
   fill: var(--brand-color-2);
 }
-.studio .portfolio-section-1-list-1 {
+.portfolio-section-1-list-1 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
