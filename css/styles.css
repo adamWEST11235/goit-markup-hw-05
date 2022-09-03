@@ -431,3 +431,4 @@ footer > div {
 .footer-social-links a:focus {
   fill: var(--brand-color-5);
   background-color: var(--brand-color-2);
+}
