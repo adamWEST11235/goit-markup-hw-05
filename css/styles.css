@@ -233,7 +233,8 @@ header li:focus .header-contact-link {
 }
 .social-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
 }
 .social-links li:not(:last-child) {
@@ -241,9 +242,10 @@ header li:focus .header-contact-link {
 }
 .social-links svg {
   fill: #afb1b8;
-  display: block;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  background-color: var(--brand-color-5);
 }
 .studio-section-4 h2 {
   font-weight: 700;
