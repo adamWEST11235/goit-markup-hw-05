@@ -236,16 +236,20 @@ header li:focus .header-contact-link {
   justify-content: center;
   align-items: center;
   margin-top: 16px;
+  gap: 10px;
 }
-.social-links li:not(:last-child) {
-  margin-right: 10px;
-}
-.social-links svg {
-  fill: #afb1b8;
+.social-links a {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--brand-color-5);
+  fill: #afb1b8;
+  background-color: var(--brand-color-2);
+  cursor: pointer;
+}
+.social-links svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .studio-section-4 h2 {
   font-weight: 700;
