@@ -175,7 +175,6 @@ img {
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
-
 	margin: 0 auto;
 	padding: 10px 41px;
 }
@@ -239,6 +238,26 @@ img {
 	padding-right: 30px;
 }
 
+.section__job--list_item {
+	position: relative;
+}
+.section__job--item_box {
+	bottom: 0px;
+	position: absolute;
+	width: 370px;
+	height: 70px;
+	background: rgba(47, 48, 58, 0.8);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1, 15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--text-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .section__job--heading {
 	font-weight: 700;
 	font-size: 36px;
@@ -323,26 +342,26 @@ img {
 	display: flex;
 	justify-content: center;
 }
-.section__customers--img{
+.section__customers--img {
 	width: 172px;
 	height: 92px;
 	fill: #afb1b8;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 }
-.section__customers--img:hover{
+.section__customers--img:hover {
 	border: 1px solid var(--color-hover);
 	border-radius: 4px;
 	fill: var(--color-hover);
 }
 
-.section__customers--img:focus{
+.section__customers--img:focus {
 	border: 1px solid var(--color-hover);
 	border-radius: 4px;
-	fill:var(--color-hover)
+	fill: var(--color-hover);
 }
 .section__customers--list_item:not(:last-child) {
 	margin-right: 26px;
