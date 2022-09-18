@@ -23,6 +23,12 @@ img {
 	margin: 0;
 	padding: 0;
 }
+:hover,
+:focus {
+	transition-duration: fill, background, background-color, color, box-shadow, border, transform;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .conteiner {
 	padding: 0 15px;
 	width: 1200px;
@@ -39,38 +45,37 @@ img {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
-	display:flex;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	visibility: visible;
-	transition-property: visablity, opacity, pointer-events, transform;
+	opacity: 1;
+	transition-property: opacity, visibility;
 	transition-duration: 2s;
+	visibility: visible;
 }
-
 .is-hidden {
 	pointer-events: none;
 	visibility: hidden;
-	opacity: 1;
+	transition-property: visibility, opacity, pointer-events;
+	opacity: 0;
+}
+.is-hidden > div {
 	transform: scale(0);
-	transition-property: visablity, opacity, pointer-events, transform;
+	transition-property: transform;
 	transition-duration: 2s;
 }
 .modal {
 	position: absolute;
-	
 	width: 528px;
 	height: 581px;
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-	0px 2px 1px rgba(0, 0, 0, 0.2);
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	visibility: visible;
-	display: block;
-	z-index: 1;
+	transform: scale(1);
 	opacity: 1;
-	transition-property: visablity, opacity, pointer-events, transform;
+	transition-property: opacity, transform;
 	transition-duration: 2s;
-	
 }
 .close-btn {
 	top: 8px;
@@ -578,6 +583,28 @@ img {
 	background: #ffffff;
 	/* border: 1px solid #eeeeee; */
 }
+.portfolio__box--figure .img {
+	position: relative;
+	overflow: hidden;
+}
+.portfolio__box--figure .overlay {
+	height: 294px;
+	width: 370px;
+	padding: 24px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: var(--color-hover);
+	transform: translateY(100%);
+	transition-property: transform;
+	transition-duration: 250ms;
+}
+.portfolio__box--figure p {
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
 .portfolio__box--figure:hover {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -588,6 +615,13 @@ img {
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 	cursor: pointer;
 }
+.portfolio__box--figure:hover .overlay {
+	transform: translateY(0);
+}
+.portfolio__box--figure:focus .overlay {
+	transform: translateY(0);
+}
+
 .portfolio__box--figure_description {
 	border: 1px solid #eeeeee;
 }
