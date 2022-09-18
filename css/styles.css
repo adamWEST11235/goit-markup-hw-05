@@ -39,35 +39,38 @@ img {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.2);
-	z-index: 5;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	visibility: visible;
+	transition-property: visablity, opacity, pointer-events, transform;
+	transition-duration: 2s;
 }
+
 .is-hidden {
 	pointer-events: none;
 	visibility: hidden;
+	opacity: 1;
 	transform: scale(0);
-	opacity: 0;
-	
-	
-	
-	
+	transition-property: visablity, opacity, pointer-events, transform;
+	transition-duration: 2s;
 }
 .modal {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	
 	width: 528px;
 	height: 581px;
 	background: #ffffff;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 	0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	transition-property: visablity, opacity, pointer-events, transform;
-	transition-duration: 2s;
 	visibility: visible;
 	display: block;
 	z-index: 1;
 	opacity: 1;
+	transition-property: visablity, opacity, pointer-events, transform;
+	transition-duration: 2s;
+	
 }
 .close-btn {
 	top: 8px;
