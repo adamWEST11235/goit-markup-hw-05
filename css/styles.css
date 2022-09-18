@@ -583,7 +583,7 @@ img {
 	background: #ffffff;
 	/* border: 1px solid #eeeeee; */
 }
-.portfolio__box--figure .img {
+.portfolio__box--figure > .imgg {
 	position: relative;
 	overflow: hidden;
 }
