@@ -595,7 +595,7 @@ img {
 	top: 0px;
 	left: 0px;
 	background-color: var(--color-hover);
-	transform: translateY(110%);
+	transform: translateY(150%);
 	transition-property: transform;
 	transition-duration: 250ms;
 }
