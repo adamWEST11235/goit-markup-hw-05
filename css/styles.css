@@ -25,7 +25,7 @@ img {
 }
 :hover,
 :focus {
-	transition-duration: fill, background, background-color, color, box-shadow, border, transform;
+	transition-property: fill, background, background-color, color, box-shadow, border, transform;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
