@@ -23,12 +23,7 @@ img {
 	margin: 0;
 	padding: 0;
 }
-:hover,
-:focus {
-	transition-property: fill, background, background-color, color, box-shadow, border, transform;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .conteiner {
 	padding: 0 15px;
 	width: 1200px;
