@@ -191,6 +191,9 @@ img {
 	color: var(--third-text-color);
 	fill: var(--third-text-color);
 	display: flex;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-property: color, fill;
 }
 .header__contact--phone svg:not(:last-child) {
 	margin-right: 10px;
